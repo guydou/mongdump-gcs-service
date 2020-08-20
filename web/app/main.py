@@ -19,7 +19,7 @@ def mongodb_conf():
     return host, port, username, password
 
 def render_output_locations():
-  return "/tmp/" + time.strftime("%Y-%m-%d-%H:%M:%S")
+  return "/tmp/" + time.strftime("%Y-%m-%d-%H-%M-%S")
 
 def get_bucket_name():
    return "coqualabs-mongodb-backup"
