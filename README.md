@@ -22,11 +22,12 @@ The configuration is done through environment variables.
 | MONGODB_USERNAME |     |  
 | MONGODB_PASSWORD |  |   
 | GOOGLE_APPLICATION_CREDENTIALS| the location of the google conf file|
+| GCS_BUCKET | The bucket to which the dump will be written|
 
 Execution example
 ```shell script
 docker run guydou/mongdump-gcs-service -e MONGODB_HOST=host/
- -e MONGODB_PORT=27017 -e MONGODB_USERNAME=username -e MONGODB_PASSWORD=password/
+ -e MONGODB_PORT=27017 -e MONGODB_USERNAME=username -e MONGODB_PASSWORD=password -e GCS_BUCKET=bucket/
 -e GOOGLE_APPLICATION_CREDENTIALS=/conf/keyfile.json -v /loction/of/key/file:/conf/keyfile.json
 ```
 

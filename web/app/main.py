@@ -22,7 +22,7 @@ def render_output_locations():
   return "/tmp/" + time.strftime("%Y-%m-%d-%H-%M-%S")
 
 def get_bucket_name():
-   return "coqualabs-mongodb-backup"
+   return os.environ.get("GCS_BUCKET")
 
 @app.route("/start")
 def runbackup():

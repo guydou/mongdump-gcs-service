@@ -29,3 +29,4 @@ services:
           MONGODB_USERNAME: root
           MONGODB_PASSWORD: example
           GOOGLE_APPLICATION_CREDENTIALS: /conf/keyfile.json
+          GCS_BUCKET: The bucket
