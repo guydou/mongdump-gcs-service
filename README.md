@@ -3,6 +3,8 @@
 I created this project to run a service in google cloud run. 
 The service does a `mongodump` to archive file and upload it to a GCS
 
+## Warning
+I haven't yet a chance to run this code on production environment, use this code with care. 
 ## Docker
 The image is published in dockerhub [here](https://hub.docker.com/repository/docker/guydou/mongdump-gcs-service)
 
