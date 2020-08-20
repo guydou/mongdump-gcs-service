@@ -6,3 +6,5 @@ RUN apt update
 RUN apt install mongodb-org-tools
 
 COPY ./app /app
+COPY ./requirments.txt /app/requirments.txt
+RUN pip install -r /app/requirments.txt

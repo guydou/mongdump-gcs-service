@@ -27,3 +27,4 @@ services:
           MONGODB_PORT: 27017
           MONGODB_USERNAME: root
           MONGODB_PASSWORD: example
+          GOOGLE_APPLICATION_CREDENTIALS: /conf/keyfile.json
